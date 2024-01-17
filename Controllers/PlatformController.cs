@@ -22,7 +22,7 @@ namespace PlatformService.Controllers
         public ActionResult<IEnumerable<PlatformReadDto>> GetAllPlatform()
         {
             var platformItem = _repository.GetAllPlatforms();
-            return Ok(platformItem);
+            return Ok(_mapper.Map<IEnumerable<PlatformReadDto>>(platformItem));
         }
     }
 }
