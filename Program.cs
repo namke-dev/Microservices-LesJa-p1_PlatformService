@@ -9,6 +9,9 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseInMemoryDatabase("InMem"));
 builder.Services.AddScoped<IPlatformRepo, PlatformRepo>();
 
+// Add auto maper service
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
