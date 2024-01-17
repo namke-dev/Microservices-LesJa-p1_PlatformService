@@ -28,4 +28,7 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+// Add data for testing
+PreparationDb.PreparationPopulation(app);
+
 app.Run();
