@@ -1,4 +1,4 @@
-Build docker image
+Test build docker image
 
 ```powershell
 docker build -t namke/platformservice -f Docker/Dockerfile .
@@ -28,3 +28,7 @@ push docker image
 ```powershell
 docker push namke/platformservice
 ```
+
+get to this end-point to test if docker container run fine:
+
+http://localhost:8080/api/platform
