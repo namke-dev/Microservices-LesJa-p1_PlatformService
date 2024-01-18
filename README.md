@@ -1,4 +1,4 @@
-Test build docker image
+## Build Platform docker image
 
 ```powershell
 docker build -t namke/platformservice -f Docker/Dockerfile .
@@ -32,3 +32,5 @@ docker push namke/platformservice
 get to this end-point to test if docker container run fine:
 
 http://localhost:8080/api/platform
+
+### Next section, we use kubectl to deploy `platformservice` image's container
